@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'jf_flat';
+  src: url("../fonts/JF_Flat_regular.ttf"); }
+body{
+    background-color: #3F51B5 ;color:#fff;font-family: 'jf_flat';
+}
+#dirassasoonpage{display: none;}
+.dirassacover{
+    background: url('../images/students.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 100%;opacity: 0.05;
+}
+.student{
+    width: 22%;
+    margin: 0 auto;
+    position: relative;
+}
+.srvc_icon{
+    width: 29px;
+    position: absolute;
+}
+.openBookIcon{
+    top: 20%;
+    right: 0;
+}
+/* ---- Counter ---- */
+ul.countdown {list-style: none;margin: -20px auto 0;padding: 0;display: block;text-align: center;position: relative;z-index: 99;}
+ul.countdown li {display: inline-block;padding: 10px 25px;}
+ul.countdown li:last-child{padding-right:0;}
+ul.countdown li:first-child{padding-left:0;}
+ul.countdown li span {font-size: 80px;}
+ul.countdown li p {font-size: 18px;margin-top: -15px;}
+/*---- dirassa soon ----*/
+.dirassaform{margin: 0 auto;width: 480px;}
+.dirassasoon{margin: 0 auto;text-align: center;position: relative;z-index: 99;}
+.dirassasoon img{max-width:20%;}
+.dirassasoon h1{font-size: 30px;margin-top: 0px;}
+.input-field label{color: #fff;}
+input[type="email"]{border-color:#fff;}
+input[type=email]:focus:not([readonly]){border-bottom:1px solid #FF4081;box-shadow:0 1px 0 0 #FF4081;}
+input[type=email]:focus:not([readonly])+label{color: #fff;}
+.input-field .prefix.active{color: #fff;}
+.senderrors{background-color: #FFD8D8;text-align: right;color: red;padding: 1px 20px;}
+.sendsuccess{background-color: #DCFFDC;text-align: right;color: green;padding: 1px 20px;}
+
+
+
+
+/*======================================*\
+/========================================\
+                responsive     
+\========================================/
+\*======================================*/
+@media (min-width: 1200px) {
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+}
+@media (min-width: 768px) and (max-width: 979px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 767px) {
+    .dirassasoon img{max-width:50%;}
+    .dirassaform{width: 440px;}
+    .student{width: 40%;}
+    ul.countdown li span {font-size: 65px;}
+    ul.countdown li p {font-size: 10px;}
+}
+@media (max-width: 480px) { 
+    .dirassaform{width: 90%;}
+    .student{width: 50%;}
+	ul.countdown li span {font-size: 65px;}
+	ul.countdown li p {font-size: 10px;}
+	ul.countdown li:nth-child(2){padding-right:2px;}
+	ul.countdown li:nth-child(3){padding-left:2px;margin-top: 10px;}
+	ul.countdown li:last-child{margin-top: 0px;}
+}
